@@ -1,0 +1,65 @@
+@import 'colors';
+@import 'mediaqueries';
+header {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+}
+li,a,button {
+   text-decoration: none;
+ }
+.logo {
+  font-size: 30px;
+  color: $textcolor;
+  margin-right: auto;
+}
+button {
+  color: $textcolor;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: $buttoncolor;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 20px;
+}
+.navlinks {
+  ul {
+    li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 8px;
+      a {
+        font-weight: bold;
+        font-size: 17px;
+        color: $textcolor;
+        
+      }
+    }
+    li {
+      a:hover {
+        color: $texthover;
+      }
+    }
+  }
+}
+button:hover {
+  background-color: $buttonhover;
+}
+.navbar_icon
+{
+    color:$textcolor;
+    opacity:0;
+    @include smallscreen{
+        opacity:1;
+        font-size:xx-large;
+    }
+}
+.navlinks{
+    @include smallscreen
+    {
+        display:none;
+    }
+}

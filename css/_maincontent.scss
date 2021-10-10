@@ -1,0 +1,20 @@
+@import "colors";
+@import "mediaqueries";
+.maincontent {
+  background-color: $secondary;
+  color: $textcolor;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  @include smallscreen {
+    grid-template-columns: 1fr;
+  }
+}
+
+#desc {
+  height: 250px;
+  font-size: 18px;
+}

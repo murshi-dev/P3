@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">WEEK3</a>
+      <div class="navbar_icon"><i class="fas fa-bars"></i></div>
+
+      <div class="navlinks">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button>Sign Up</button></li>
+        </ul>
+      </div>
+    </header>
+    <div class="maincontent">
+      <div id="topic">
+        <h2>CONCEPTS COVERED</h2>
+      </div>
+      <div id="desc">
+        <ol>
+          <li>breakdown css files into manageable SCSS files</li>
+          <li>colors created as 'variables' in colors.scss file @'partials'</li>
+         
+          <li>all navbar content created as 'header' in navbar.scss</li>
+          <ul>
+            <li>logo created as a link and styles added</li>
+            <li>
+              menu items and button created as links under list and styles added
+            </li>
+            <li>dispaly flex added to header</li>
+            <li>
+              hovering effects added to menu and button using 'nesting' concept
+            </li>
+            <li>
+                '@mixin' used to manage responsive design under mediaqueries.scss<br>
+                and called using '@include' in navbar.scss
+              </li>
+          </ul>
+          <li>all main content in maincontent.scss</li>
+          <ul>
+              <li>'display grid' used to list down topics covered in two columns</li>
+              <li>mediaqueries used to target small screen display as one column</li>
+          </ul>
+          <li>styles.scss has only universal setting and all the '@imports'</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
