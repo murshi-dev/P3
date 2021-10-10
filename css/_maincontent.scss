@@ -3,11 +3,12 @@
 .maincontent {
   background-color: $secondary;
   color: $textcolor;
-  height: 85vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  overflow: auto;
 
   @include smallscreen {
     grid-template-columns: 1fr;
